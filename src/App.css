@@ -51,10 +51,24 @@ img {
   border-radius: 50%;
 }
 
+.titles-wrapper {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.titles-wrapper h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .list-wrapper {
   background-color: rgb(0, 43, 54);
   padding: 0.5em;
-  margin: 0.5em;
+  margin: 0.5em 0.5em 0.5em 0.5em;
   border-radius: 1.5em;
 }
 
@@ -71,7 +85,12 @@ img {
 
 .card-wrapper {
   background-color: #265a68;
-  padding: 2em;
-  margin: 2em;
   border-radius: 1.5em;
+  margin: 0.5em 2em;
+  padding: 2em;
+}
+
+.card-div {
+  position: sticky;
+  top: 0;
 }

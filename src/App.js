@@ -26,9 +26,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="titles-wrapper">
+          <h1>User's list</h1>
+          <h1>Card Information</h1>
+        </div>
         <div className="row">
           <div className="column">
-            <h1>User's list</h1>
             {currentUsers !== null &&
               currentUsers.map((user, id) => (
                 <div
@@ -43,8 +46,7 @@ function App() {
                 </div>
               ))}
           </div>
-          <div className="column">
-            <h1>Card Information</h1>
+          <div className="column card-div">
             {selectedCard && (
               <UserCard
                 title={selectedCard.name.title}
